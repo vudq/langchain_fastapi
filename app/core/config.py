@@ -16,7 +16,7 @@ class Settings(BaseSettings):
     # Model settings
     MODEL_NAME: str = "gemini-2.0-flash"
     MODEL_TEMPERATURE: float = 0.7
-    GOOGLE_API_KEY: Optional[str] =  "AIzaSyAG7wzJDlMW3ApAkTktMl8D965KESnufew" #os.getenv("GOOGLE_API_KEY")
+    GOOGLE_API_KEY: Optional[str] =  "" #os.getenv("GOOGLE_API_KEY")
 
     # Template settings
     TEMPLATES_DIR: str = "app/templates"
