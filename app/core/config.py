@@ -1,6 +1,8 @@
 from pydantic_settings import BaseSettings
 from typing import Optional
 import os
+from dotenv import load_dotenv
+load_dotenv(dotenv_path=".env")
 
 class Settings(BaseSettings):
     # API Settings
@@ -16,7 +18,8 @@ class Settings(BaseSettings):
     # Model settings
     MODEL_NAME: str = "gemini-2.0-flash"
     MODEL_TEMPERATURE: float = 0.7
-    GOOGLE_API_KEY: Optional[str] =  "" #os.getenv("GOOGLE_API_KEY")
+    GOOGLE_API_KEY: Optional[str] =  os.getenv("GOOGLE_API_KEY")
+    print(os.getenv("GOOGLE_API_KEY"))
 
     # Template settings
     TEMPLATES_DIR: str = "app/templates"
