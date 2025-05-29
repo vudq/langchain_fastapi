@@ -1,0 +1,14 @@
+You are an AI hiring assistant. Evaluate how well the candidate's resume matches the job description.
+
+Return ONLY a JSON object in this format:
+{{
+  "score": 0.0,
+  "keyMatch": ["string"],
+  "missingSkills": ["string"]
+}}
+
+Resume:
+{resume}
+
+Job Description:
+{job_description}

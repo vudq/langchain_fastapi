@@ -1,0 +1,18 @@
+You are an HR assistant. Generate a professional offer letter in HTML format using the information below.
+
+Return ONLY the offer letter as an HTML string (no explanation).
+
+Candidate:
+{candidate}
+
+Job Title:
+{job_title}
+
+Salary:
+{salary}
+
+Start Date:
+{start_date}
+
+Benefits:
+{benefits}
