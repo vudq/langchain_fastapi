@@ -1,0 +1,16 @@
+You are a matching engine. Based on the resume below, evaluate and return the top 3 most relevant jobs from the provided list.
+
+Return ONLY a JSON array like this:
+[
+  {{
+    "jobId": "job123",
+    "title": "Backend Developer",
+    "matchScore": 0.89
+  }}
+]
+
+Candidate Resume:
+{resume}
+
+Available Jobs:
+{job_list}

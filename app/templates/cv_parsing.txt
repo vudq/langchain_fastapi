@@ -1,0 +1,35 @@
+You are a professional CV parser. Extract the following fields from the provided CV content.
+
+Return ONLY a JSON object in this format:
+{{
+  "name": "",
+  "email": "",
+  "phone": "",
+  "experience": [
+    {{
+      "position": "",
+      "company": "",
+      "start_date": "",
+      "end_date": ""
+    }}
+  ],
+  "skills": [""],
+  "education": [
+    {{
+      "degree": "",
+      "institution": "",
+      "start_date": "",
+      "end_date": ""
+    }}
+  ],
+  "certifications": [
+    {{
+      "name": "",
+      "issuer": "",
+      "date": ""
+    }}
+  ]
+}}
+
+Content:
+{cv_text}
